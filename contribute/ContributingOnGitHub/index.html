@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://cmv.io/contribute/ContributingOnGitHub/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Submitting a Pull Request - CMV</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">CMV</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../..">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/">Configure</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../support/">Support</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../develop/">Development Environment</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CHANGELOG/">Changelog</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/viewer/">viewer.js</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/app/">app.js</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Viewer.js <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/header/">header</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/mapOptions/">MapOptions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/operationalLayers/">Operational Layers</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/panes/">Panes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/titles/">Titles</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/widgets/">Widgets</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../widgets/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Basemaps/">BaseMaps</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Bookmarks/">Bookmarks</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Directions/">Directions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Draw/">Draw</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Editor/">Editor</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Find/">Find</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Geocoder/">Geocoder</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Growler/">Growler</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Help/">Help</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/HomeButton/">Home Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Identify/">Identify</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LayerControl/">Layer Control</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Legend/">Legend</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LocateButton/">Locate Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/MapInfo/">Map Info</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Measurement/">Measurement</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/OverviewMap/">Overview Map</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Print/">Print</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Scalebar/">Scalebar</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/StreetView/">StreetView</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../BuildingCustomWidgets/">Building Custom Widgets</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Submitting a Pull Request</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Committers/">Committing Changes to CMV</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/changelog/">Change Log</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/team/">The CMV Team</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../BuildingCustomWidgets/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../Committers/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/cmv/cmv-app">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#contributing-on-github">Contributing on GitHub</a></li>
+        
+    
+        <li class="main "><a href="#getting-started">Getting Started</a></li>
+        
+    
+        <li class="main "><a href="#making-changes">Making Changes</a></li>
+        
+    
+        <li class="main "><a href="#submitting-changes">Submitting Changes</a></li>
+        
+    
+        <li class="main "><a href="#additional-resources">Additional Resources</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="contributing-on-github">Contributing on GitHub</h1>
+<p>Enhancements and bug fixes from the user community are essential for keeping CMV great. We want to keep it as easy as possible to contribute changes. There are a few guidelines that we need contributors to follow so that we can have a chance of keeping on top of things.</p>
+<h1 id="getting-started">Getting Started</h1>
+<ul>
+<li>
+<p>Make sure you have a <a href="https://github.com/signup/free">GitHub account</a>.</p>
+</li>
+<li>
+<p>Fork the repository on GitHub</p>
+</li>
+</ul>
+<h1 id="making-changes">Making Changes</h1>
+<ul>
+<li>
+<p>Through <a href="https://github.com/cmv/cmv-app/issue/">GitHub issues</a>, or through the #cmv IRC channel on freenode.org, you talk about a feature you would like to see (or a bug), and why it should be in CMV.</p>
+</li>
+<li>
+<p>There is also a <a href="https://gitter.im/cmv/cmv-app">gitter.im chatroom</a>, stop by sometime!</p>
+</li>
+<li>
+<p>Create a topic branch from where you want to base your work.</p>
+<ul>
+<li>
+<p>This is the <code>develop</code> branch.</p>
+</li>
+<li>
+<p>To quickly create a topic branch based on develop; git checkout -b fix/my_contribution develop. Please avoid working directly on the master branch.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Make commits of logical units.</p>
+</li>
+<li>
+<p>Test your changes and please help us out by updating and implementing some automated tests if possible.</p>
+</li>
+<li>
+<p>Check for unnecessary whitespace with <code>git diff --check</code> before committing.</p>
+</li>
+<li>
+<p>Make sure your commit messages are in the proper format.
+    (Example?)</p>
+</li>
+</ul>
+<h1 id="submitting-changes">Submitting Changes</h1>
+<ul>
+<li>
+<p>Push your changes to a topic branch in your fork of the repository.</p>
+</li>
+<li>
+<p>Once you feel it is ready, submit the pull request to the cmv/cmv-app repository against the 'develop' branch (<a href="https://help.github.com/articles/creating-a-pull-request">more information on this can be found here</a>).</p>
+</li>
+<li>
+<p>In the pull request, outline what you did and point to specific conversations (as in URL's) and issues that you are are resolving. This is a tremendous help for us in evaluation and acceptance.</p>
+</li>
+<li>
+<p>Once the pull request is in, please do not delete the branch or close the pull request (unless something is wrong with it).</p>
+</li>
+<li>
+<p>One of the members will evaluate it within a reasonable time period (which is to say usually within 2-4 weeks). Some things get evaluated faster or fast tracked. We are human and we have active lives outside of open source so don't fret if you haven't seen any activity on your pull request within a month or two. We don't have a Service Level Agreement (SLA) for pull requests. Just know that we will evaluate your pull request.</p>
+</li>
+<li>
+<p>If we have comments or questions when we do evaluate it and receive no response, it will probably lessen the chance of getting accepted.The core team looks at Pull Requests on a regular basis.</p>
+</li>
+<li>
+<p>After feedback has been given we expect responses within a reasonable time frame (2-4 weeks). After that time frame, we may close the pull request if it isn't showing any activity.</p>
+</li>
+<li>
+<p>If you reformat code or change core functionality without an approval from a person on the CMV team, it's likely that no matter how awesome it looks afterwards, it will probably not get accepted. Reformatting code makes it harder for us to evaluate exactly what was changed.</p>
+</li>
+<li>
+<p>If you do these things, it will be make evaluation and acceptance easy. Now if you stray outside of the guidelines we have above, it doesn't mean we are going to ignore your pull request. It will just make things harder for us. Harder for us roughly translates to a longer time to acceptance of your pull request.</p>
+</li>
+</ul>
+<h1 id="additional-resources">Additional Resources</h1>
+<ul>
+<li><a href="../Committers/">Guide for CMV Committers</a></li>
+<li><a href="http://help.github.com/">General GitHub documentation</a></li>
+<li><a href="http://help.github.com/send-pull-requests/">GitHub pull request documentation</a></li>
+<li><a href="https://gitter.im/cmv/cmv-app/">Gitter.im Chat Room</a></li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

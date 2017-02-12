@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://cmv.io/widgets/LayerControl/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>Layer Control - CMV</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">CMV</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../..">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/">Configure</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../support/">Support</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../develop/">Development Environment</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CHANGELOG/">Changelog</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/viewer/">viewer.js</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/app/">app.js</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Viewer.js <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/header/">header</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/mapOptions/">MapOptions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/operationalLayers/">Operational Layers</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/panes/">Panes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/titles/">Titles</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/widgets/">Widgets</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Basemaps/">BaseMaps</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Bookmarks/">Bookmarks</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Directions/">Directions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Draw/">Draw</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Editor/">Editor</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Find/">Find</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Geocoder/">Geocoder</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Growler/">Growler</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Help/">Help</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HomeButton/">Home Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Identify/">Identify</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">Layer Control</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Legend/">Legend</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LocateButton/">Locate Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../MapInfo/">Map Info</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Measurement/">Measurement</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../OverviewMap/">Overview Map</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Print/">Print</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Scalebar/">Scalebar</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../StreetView/">StreetView</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../contribute/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/BuildingCustomWidgets/">Building Custom Widgets</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/ContributingOnGitHub/">Submitting a Pull Request</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/Committers/">Committing Changes to CMV</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/changelog/">Change Log</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/team/">The CMV Team</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../Identify/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../Legend/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/cmv/cmv-app">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#layer-control">Layer Control</a></li>
+        
+            <li><a href="#features">Features</a></li>
+        
+            <li><a href="#layercontrol-in-cmv">LayerControl in CMV</a></li>
+        
+            <li><a href="#layercontrol-class">LayerControl Class</a></li>
+        
+            <li><a href="#widget-construction-parameters">Widget Construction Parameters</a></li>
+        
+            <li><a href="#layerinfo-parameters">LayerInfo Parameters</a></li>
+        
+            <li><a href="#control-options">Control Options</a></li>
+        
+            <li><a href="#sub-layer-menu-items">Sub Layer Menu Items</a></li>
+        
+            <li><a href="#topics">Topics</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="layer-control">Layer Control</h1>
+<p>A layer control widget for CMV. Just don't call it a TOC.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Toggle layer visibility</li>
+<li>Layer menu with Zoom To Layer, Transparency and Layer Swipe</li>
+<li>Capabilities to create custom dynamic sublayer menus</li>
+<li>Legends for ArcGIS layers</li>
+<li>Sublayer/folder structure and toggling for ArcGIS dynamic layers</li>
+<li>can be disabled</li>
+<li>
+<p>single layer map services display legend in expand area</p>
+</li>
+<li>
+<p>Layer reordering in map and LayerControl widget</p>
+</li>
+<li>Separate vector and overlay layers (required for layer reordering)</li>
+<li>Support for several layer types:</li>
+<li>dynamic</li>
+<li>feature</li>
+<li>tiled</li>
+<li>image</li>
+</ul>
+<h2 id="layercontrol-in-cmv">LayerControl in CMV</h2>
+<p>LayerControl can be easily loaded with CMV's widget loader. CMV creates an array with a <code>LayerInfo</code> object for each layer with parameters and options specific to the layer and its associated Control. <code>layerControlLayerInfos: true</code> tells the widget loader to include the <code>LayerInfos</code> array. LayerControl can also be used in your widget. See below for more Class information.</p>
+<pre><code class="javascript">layerControl: {
+    include: true,
+    id: 'layerControl',
+    type: 'titlePane',
+    path: 'gis/dijit/LayerControl',
+    title: 'Layers',
+    open: true,
+    position: 0,
+    options: {
+        map: true, //required
+        layerControlLayerInfos: true //required
+    }
+}
+</code></pre>
+
+<p>Each layer has its own Control widget in LayerControl. Additional Control specific options can be specified with <code>layerControlLayerInfos</code>. See Control Options below. The similarity/difference in names is a bit confusing. A future release of CMV will use a different system for widgets to obtain layer options. Not only will core widgets like LayerControl and Identify no longer need a tie in with CMV's Controller class, developers will be able to specify custom options objects through CMV's layer loader for use with their own widgets.</p>
+<p><strong>CMV Dynamic Layer Example</strong></p>
+<pre><code class="javascript">{
+    type: 'dynamic',
+    url: 'http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/PublicSafety/PublicSafetyOperationalLayers/MapServer',
+    title: 'Louisville Public Safety',
+    options: {
+        //layer options
+    },
+    layerControlLayerInfos: {
+        sublayers: false,
+        noTransparency: true
+    }
+}
+</code></pre>
+
+<p><strong>CMV Feature Layer Example</strong></p>
+<pre><code class="javascript">{
+    type: 'feature',
+    url: 'http://services1.arcgis.com/g2TonOxuRkIqSOFx/arcgis/rest/services/MeetUpHomeTowns/FeatureServer/0',
+    title: 'STLJS Meetup Home Towns',
+    options: {
+        //layer options
+    },
+    layerControlLayerInfos: {
+        noLegend: true,
+        noZoom: true
+    }
+}
+</code></pre>
+
+<h2 id="layercontrol-class">LayerControl Class</h2>
+<pre><code class="javascript">require(['gis/dijit/LayerControl'], function (LayerControl) {
+    var layerControl = new LayerControl({
+        map: map,
+        separated: true,
+        vectorReorder: true,
+        overlayReorder: true
+        layerInfos: [
+            // see LayerInfos
+        ]
+    }, srcRefNode);
+});
+</code></pre>
+
+<h2 id="widget-construction-parameters">Widget Construction Parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>map</code></td>
+<td align="center">Object</td>
+<td><code>esri/map</code> instance. Required.</td>
+</tr>
+<tr>
+<td align="center"><code>layerInfos</code></td>
+<td align="center">Array</td>
+<td>Array of <code>LayerInfos</code>. Required. See LayerInfos.</td>
+</tr>
+<tr>
+<td align="center"><code>separated</code></td>
+<td align="center">Boolean</td>
+<td>Separate vector and overlay layer types. Required for <code>vectorReorder</code>, <code>vectorLabel</code>, <code>overlayReorder</code> and <code>overlayLabel</code>. Default is <code>false</code>.</td>
+</tr>
+<tr>
+<td align="center"><code>vectorReorder</code></td>
+<td align="center">Boolean</td>
+<td>Enable reordering of vector layers in map and Layer Control. Default is <code>false</code>.</td>
+</tr>
+<tr>
+<td align="center"><code>vectorLabel</code></td>
+<td align="center">Mixed</td>
+<td>Label for vector layers. Default is <code>false</code>. Pass the label or html for quick easy custom styling of label text.</td>
+</tr>
+<tr>
+<td align="center"><code>overlayReorder</code></td>
+<td align="center">Boolean</td>
+<td>Enable reordering of overlay layers in map and Layer Control. Default is <code>false</code>.</td>
+</tr>
+<tr>
+<td align="center"><code>overlayLabel</code></td>
+<td align="center">Mixed</td>
+<td>Label for overlay layers. Default is <code>false</code>. Pass the label or html for quick easy custom styling of label text.</td>
+</tr>
+<tr>
+<td align="center"><code>noLegend</code></td>
+<td align="center">Boolean</td>
+<td>When <code>true</code> no legend is created for all layers. Can be overridden for specific layer(s) with `noLegend' layer option.</td>
+</tr>
+<tr>
+<td align="center"><code>noZoom</code></td>
+<td align="center">Boolean</td>
+<td>When <code>true</code> removes "Zoom to Layer" menu item for all layers. Can be overridden for specific layer(s) with `noZoom' layer option.</td>
+</tr>
+<tr>
+<td align="center"><code>noTransparency</code></td>
+<td align="center">Boolean</td>
+<td>When <code>true</code> removes "Transparency" menu item for all layers. Can be overridden for specific layer(s) with `noTransparency' layer option.</td>
+</tr>
+<tr>
+<td align="center"><code>swipe</code></td>
+<td align="center">Boolean</td>
+<td>When <code>true</code> adds "Layer Swipe" menu item for all layers.  Can be overridden for specific layer(s) with <code>swipe</code> layer option.</td>
+</tr>
+<tr>
+<td align="center"><code>swiperButtonStyle</code></td>
+<td align="center">String</td>
+<td>CSS for positioning "Exit Layer Swipe" button in the map. Must include <code>position:absolute;</code> and a <code>z-index</code>. Default is <code>position:absolute;top:20px;left:120px;z-index:50;</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="methods">Methods</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>showAllLayers()</code></td>
+<td>Turn all layers on.</td>
+</tr>
+<tr>
+<td align="center"><code>hideAllLayers()</code></td>
+<td>Turn all layers off.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="layerinfos">LayerInfos</h3>
+<p>The <code>layerInfo</code> object contains configuration options for each layer control. LayerControl initializes each layer control using these parameters.</p>
+<pre><code class="javascript">{
+    layer: layer,
+    type: 'dynamic',
+    title: 'EPA TMDL 303d Reaches',
+    controlOptions: {
+        // see Control Options
+    }
+}
+</code></pre>
+
+<h2 id="layerinfo-parameters">LayerInfo Parameters</h2>
+<table>
+<thead>
+<tr>
+<th align="center">Parameter</th>
+<th align="center">Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>layer</code></td>
+<td align="center">Mixed</td>
+<td>A layer object OR layer id string.</td>
+</tr>
+<tr>
+<td align="center"><code>type</code></td>
+<td align="center">String</td>
+<td>Supports <code>dynamic</code>, <code>tiled</code>, <code>image</code> and <code>feature</code>. Additional layer types coming soon.</td>
+</tr>
+<tr>
+<td align="center"><code>title</code></td>
+<td align="center">String</td>
+<td>Title for the control. When loaded with CMV's widget loader this is the <code>title</code> option for the layer.</td>
+</tr>
+<tr>
+<td align="center"><code>controlOptions</code></td>
+<td align="center">Object</td>
+<td>Additional options for the layer control. See Control Options.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="control-options">Control Options</h2>
+<p>All layer types have common options while some options are specific to certain layer types. All <code>controlOptions</code> are Boolean except for <code>subLayerMenu</code>, which is an object.</p>
+<table>
+<thead>
+<tr>
+<th align="center">Option</th>
+<th>Description</th>
+<th>Affects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><code>exclude</code></td>
+<td>When <code>true</code> a layer control will not be added to the widget. Using <code>exclude</code> for a layer with layer reordering enabled which is not above or below all included layers will result in layer reordering issues.</td>
+<td>all layers</td>
+</tr>
+<tr>
+<td align="center"><code>noLegend</code></td>
+<td>When <code>true</code> no legend is created. Set to <code>false</code> to override <code>noLegend: true</code> widget parameter.</td>
+<td>dynamic, feature and tiled</td>
+</tr>
+<tr>
+<td align="center"><code>noZoom</code></td>
+<td>When <code>true</code> removes "Zoom to Layer" menu item. Set to <code>false</code> to override <code>noZoom: true</code> widget parameter.</td>
+<td>all layers</td>
+</tr>
+<tr>
+<td align="center"><code>noTransparency</code></td>
+<td>When <code>true</code> removes "Transparency" menu item. Set to <code>false</code> to override <code>noTransparency: true</code> widget parameter.</td>
+<td>all layers</td>
+</tr>
+<tr>
+<td align="center"><code>swipe</code></td>
+<td>When <code>true</code> adds "Layer Swipe" menu item. Set to <code>false</code> to override <code>swipe: true</code> widget parameter.</td>
+<td>all layers</td>
+</tr>
+<tr>
+<td align="center"><code>swipeScope</code></td>
+<td>When <code>true</code> adds Scope option to Layer Swipe menu. Default is <code>false</code>.</td>
+<td></td>
+</tr>
+<tr>
+<td align="center"><code>expanded</code></td>
+<td>When <code>true</code> expands top level exposing sublayers or legend.</td>
+<td>dynamic, feature &amp; tiled</td>
+</tr>
+<tr>
+<td align="center"><code>sublayers</code></td>
+<td>When <code>false</code> dynamic folder/sublayer structure is not created.</td>
+<td>dynamic</td>
+</tr>
+<tr>
+<td align="center"><code>metadataUrl</code></td>
+<td>When <code>true</code> and layer has <code>url</code> property (ArcGIS layers) links to service URL. When a URL links to said URL.</td>
+<td>all layers</td>
+</tr>
+<tr>
+<td align="center"><code>allSublayerToggles</code></td>
+<td>When <code>false</code> toggle all sublayers on/off layer menu items will not be included.</td>
+<td>dynamic</td>
+</tr>
+<tr>
+<td align="center"><code>subLayerMenu</code></td>
+<td>An object consisting of a key value pairs where they key is a layer type and the value is an array of menu items</td>
+<td>All layers of type key given</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sub-layer-menu-items">Sub Layer Menu Items</h2>
+<p>Dynamic sublayers can have their own menu. The menu system is set up using dojo/topic so that another widget can listen to when a menu item is clicked, and manipulate or add functionality to the app. Each menu item in the array will apply to each layer of the type specified in the key. Each menu item inside the array has the following properties:
+- <code>label</code> - the string to display in the menu item
+- <code>iconClass</code> - the font awesome icon class to add to the menu
+- <code>topic</code> - the topic to publish when the menu item is clicked (see topics below)</p>
+<pre><code class="JavaScript"> subLayerMenu: {
+  dynamic: [{
+      label: 'Query Layer...',
+      iconClass: 'fa fa-search fa-fw',
+      topic: 'queryLayer'
+  }, {
+      label: 'Open Attribute Table',
+      topic: 'openTable',
+      iconClass: 'fa fa-table fa-fw'
+  }]
+ }
+}
+</code></pre>
+
+<p>The menu can be completely overridden on a per layer basis also using the layers' <code>layerControlLayerInfos.menu</code> property. The <code>menu</code> property is an array of menu items.</p>
+<pre><code class="JavaScript">layerControlLayerInfos: {
+ menu: [{
+      label: 'Query Layer...',
+      iconClass: 'fa fa-search fa-fw',
+      topic: 'queryLayer'
+  }, {
+      label: 'Open Attribute Table',
+      topic: 'openTable',
+      iconClass: 'fa fa-table fa-fw'
+  }]
+}
+</code></pre>
+
+<h2 id="topics">Topics</h2>
+<p>Subscribe to any of the following topics. CMV aims to please, so let us know if you would like a topic published for a particular user action, or layer/layer control state change.</p>
+<p><code>layerControl/layerToggle</code> is published when layer visibility changes via the layer checkbox.</p>
+<pre><code class="javascript">topic.subscribe('layerControl/layerToggle', function (r) {
+    console.log(r.id); //layer id
+    console.log(r.visible); //layer visibility (true/false)
+});
+</code></pre>
+
+<p><code>layerControl/setVisibleLayers</code> is published when visible layers are set on a dynamic layer.</p>
+<pre><code class="javascript">topic.subscribe('layerControl/setVisibleLayers', function (r) {
+    console.log(r.id); //layer id
+    console.log(r.visibleLayers); //array of set visible layer ids
+});
+</code></pre>
+
+<p><code>layerControl/menuItemTopic</code> is published when a dynamic sublayer menu item is clicked.</p>
+<pre><code class="JavaScript">topic.subscribe('layerControl/menuItemTopic', function (r) {
+    console.log(r.layer); //layer id
+    console.log(r.subLayer); //array of set visible layer ids
+    console.log(r.iconNode); //a domNode to toggle font awesome classes on
+    console.log(r.menuItem); //the clicked menu item object in case you want to modify it
+
+    //modify the iconNode to show that something happened to this layer
+    if (r.iconNode) {
+        if (domClass.contains(r.iconNode, 'fa-fire')) {
+            domClass.remove(r.iconNode, 'fa-fire');
+        } else {
+            domClass.add(r.iconNode, 'fa-fire');
+        }
+    }
+});
+</code></pre>
+
+<!--
+#### Layer Control TODO
+Do not include this section in docs outside this file.
+
+1. Support all layer types CMV supports (csv, kml, stream, wms)
+2. Create a base class for layer controls
+2. Method by which to add custom layer menu items
+3. Integrate with new layer options for widgets system
+4. Optional plugins for leveraging layer manipulation capabilities, e.g. ui for user to change rendering on image layer, change renderer for user added shape file or CSV, etc.
+5. Users' suggestions for improvements
+--></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

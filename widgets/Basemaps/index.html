@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://cmv.io/widgets/Basemaps/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>BaseMaps - CMV</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">CMV</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../..">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/">Configure</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../support/">Support</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../develop/">Development Environment</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CHANGELOG/">Changelog</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/viewer/">viewer.js</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/app/">app.js</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Viewer.js <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../configure/header/">header</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/mapOptions/">MapOptions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/operationalLayers/">Operational Layers</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/panes/">Panes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/titles/">Titles</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../configure/widgets/">Widgets</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">BaseMaps</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Bookmarks/">Bookmarks</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Directions/">Directions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Draw/">Draw</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Editor/">Editor</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Find/">Find</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Geocoder/">Geocoder</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Growler/">Growler</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Help/">Help</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../HomeButton/">Home Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Identify/">Identify</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LayerControl/">Layer Control</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Legend/">Legend</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../LocateButton/">Locate Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../MapInfo/">Map Info</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Measurement/">Measurement</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../OverviewMap/">Overview Map</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Print/">Print</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../Scalebar/">Scalebar</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../StreetView/">StreetView</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../contribute/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/BuildingCustomWidgets/">Building Custom Widgets</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/ContributingOnGitHub/">Submitting a Pull Request</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/Committers/">Committing Changes to CMV</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/changelog/">Change Log</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/team/">The CMV Team</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../Bookmarks/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/cmv/cmv-app">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#basemaps">Basemaps</a></li>
+        
+            <li><a href="#what-options-are-available">What Options Are Available?</a></li>
+        
+            <li><a href="#getting-started-with-custom-basemaps">Getting Started with custom basemaps</a></li>
+        
+            <li><a href="#implementing-your-custom-basemaps">Implementing your custom basemaps</a></li>
+        
+            <li><a href="#advanced-topics">Advanced Topics</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="basemaps">Basemaps</h1>
+<p>This file comes with the standard ESRI basemaps already configured to work with the application. Should you want to use your own custom basemaps or mash them up with ESRI basemaps there are a couple of ways to do this.</p>
+<h2 id="what-options-are-available">What Options Are Available?</h2>
+<ol>
+<li>
+<p>In an effort to not duplicate documentation it is strongly recommended you become familiar with the ArcGIS API for Javascript.</p>
+</li>
+<li>
+<p>To understand the different parameters or options available to you.</p>
+</li>
+</ol>
+<p>a) For further customizing your Basemap please refer to  the <a href="https://developers.arcgis.com/javascript/jsapi/basemap-amd.html">ArcGIS API for Javascript -- Basemap</a>.</p>
+<p>b) For further customizing your BasemapLayer please refer to the <a href="https://developers.arcgis.com/javascript/jsapi/basemaplayer-amd.html">ArcGIS API for Javascript -- BasemapLayer</a>.</p>
+<h2 id="getting-started-with-custom-basemaps">Getting Started with custom basemaps</h2>
+<ol>
+<li>
+<p>In the file <code>\viewer\js\config\basemaps.js</code> change <code>mode: 'agol',</code> to <code>mode: 'custom',</code></p>
+</li>
+<li>
+<p>Block Comment the preconfigured AGOL basemaps so you can use your custom basemaps.</p>
+</li>
+</ol>
+<pre><code class="javascript">/*streets: {
+      title: 'Streets'
+  },
+  satellite: {
+      title: 'Satellite'
+  },
+  hybrid: {
+      title: 'Hybrid'
+  },
+  topo: {
+      title: 'Topo'
+  },
+  gray: {
+      title: 'Gray'
+  },
+  oceans: {
+      title: 'Oceans'
+  },
+  'national-geographic': {
+      title: 'Nat Geo'
+  },
+  osm: {
+      title: 'Open Street Map'
+  }
+*/
+</code></pre>
+
+<ol>
+<li><strong>It is recommended when getting started to not delete code right away. By commenting the code you have something you can refer back to.</strong></li>
+</ol>
+<h2 id="implementing-your-custom-basemaps">Implementing your custom basemaps</h2>
+<ol>
+<li>Remove the Block Comment in the example section of <code>\viewer\js\config\basemaps.js</code> for custom basemaps.</li>
+</ol>
+<pre><code class="javascript">// examples of custom basemaps
+
+            streets: {
+
+
+                title: 'Streets',
+                basemap: new Basemap({
+                    id: 'streets',
+                    layers: [new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+                    })]
+                })
+            },
+            satellite: {
+                title: 'Satellite',
+                basemap: new Basemap({
+                    id: 'satellite',
+                    layers: [new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+                    })]
+                })
+            },
+            hybrid: {
+                title: 'Hybrid',
+                basemap: new Basemap({
+                    id: 'hybrid',
+                    layers: [new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+                    }), new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer',
+                        isReference: true,
+                        displayLevels: [0, 1, 2, 3, 4, 5, 6, 7]
+                    }), new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer',
+                        isReference: true,
+                        displayLevels: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+                    })]
+                })
+            },
+            lightGray: {
+                title: 'Light Gray Canvas',
+                basemap: new Basemap({
+                    id: 'lightGray',
+                    layers: [new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer'
+                    }), new BasemapLayer({
+                        url: 'http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer',
+                        isReference: true
+                    })]
+                })
+            }
+</code></pre>
+
+<ol>
+<li>Replace <code>title:</code> and <code>id:</code> and <code>url:</code> as necessary to match the custom basemaps array you want to display.
+ a) Special note about the basemap function name - Notice this name matches a string in the <code>basemapToShow:[]</code>. This is important because the name given to the function must correspond to a name in the array. For example;</li>
+</ol>
+<pre><code class="javascript">streets: {
+    title: 'Streets',
+    basemap: new Basemap({
+        id: 'streets',
+        layers: [new BasemapLayer({
+            url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+        })]
+    })
+},
+</code></pre>
+
+<p><strong>Note:</strong> If you were to change the function name from <code>streets:{}</code> to <code>streetscustom:{}</code> then you would also need to add or change the name in the <code>basemapsToShow:[]</code> array to match the name of your function. An example of how this might be done is below.</p>
+<h3 id="example-configuration-to-use-custom-basemaps-displayed-in-the-basemap-gallery">Example configuration to use custom basemaps displayed in the Basemap Gallery</h3>
+<pre><code class="javascript">// at CMV version 1.3.0 the three defines below are included and commented out.
+// uncomment each define to use custom basemaps
+// at CMV v1.2.0 you will need to add the following in define([], and in function()
+define([
+    'esri/dijit/Basemap',
+    'esri/dijit/BasemapLayer',
+    'esri/layers/osm'
+], function (Basemap, BasemapLayer, osm) {
+    return {
+        map: true,
+        mode: 'custom', //must be either 'agol' or 'custom'
+        title: 'Basemaps',
+        // use this as the start basemap when application first opens
+        mapStartBasemap: 'BaseMap1',
+        //this is the list of basemaps to show in the BaseMap Gallery.
+        basemapsToShow: ['BaseMap1', 'BaseMap2','BaseMap3'],  
+        basemaps: {
+            BaseMap1: {
+                title: 'My First Basemap', //appears as basemap title in Gallery
+                basemap: new Basemap({
+                    id: 'basemap1',
+                    layers: [new BasemapLayer({
+                        url: 'http://ServerName/arcgis/rest/services/BaseMapName/MapServer'
+                    })]
+                })
+            },
+            BaseMap2: {
+                title: 'My Second Basemap', //appears as basemap title in Gallery
+                basemap: new Basemap({
+                    id: 'basemap2',
+                    layers: [new BasemapLayer({
+                        url: 'http://ServerName/arcgis/rest/services/BaseMapName/MapServer'
+                    })]
+                })
+            },
+            BaseMap3: {
+                title: 'My Third Basemap', //appears as basemap title in Gallery
+                basemap: new Basemap({
+                    id: 'basemap3',
+                    layers: [new BasemapLayer({
+                        url: 'http://ServerName/arcgis/rest/services/BaseMapName/MapServer'
+                    })]
+                })
+            }
+        }
+    };
+});
+</code></pre>
+
+<h2 id="advanced-topics">Advanced Topics</h2>
+<ol>
+<li>
+<p>The first BasemapLayer added in a Basemap will define the scales or levels of detail.</p>
+</li>
+<li>
+<p>To mashup multiple tiled services the scales or levels of detail from both services must be the same.</p>
+</li>
+<li>
+<p>If your tiled services have scales or levels of detail that go in beyond the Esri scales, you can still take advantage of those scales but continue using Esri basemap services albeit with a little more customization.</p>
+</li>
+</ol>
+<h3 id="zooming-in-beyond-esri-default-scales-or-levels-of-detail">Zooming in beyond Esri default scales or levels of detail.</h3>
+<p><strong>This can also be accomplished without an additional map service by editing your mapOptions object.  See the <a href="../../configure/mapOptions/#manually-setting-the-levels-of-detail-lods">mapOptions config page</a> for more details.</strong></p>
+<ul>
+<li>
+<p>Create a map service and enable caching using your scales, but choose the option to generate tiles manually.</p>
+</li>
+<li>
+<p>This will publish a service with your scales or levels of detail. While it appears like a cache service     there was no time spent creating the tiles. It is merely being used to define your scales or levels of detail.</p>
+</li>
+<li>
+<p>In this example, the service defining scales or levels of detail is called <strong>LODS</strong>. Notice it is the first service defined in Basemap as a BasemapLayer. Therefore the streets Basemap should assume the scales or levels of detail of the <strong>LODS</strong> service. Although we still need to make some other customizations.</p>
+</li>
+</ul>
+<pre><code class="javascript">
+//basemaps.js
+ streets: {
+    title: 'Clermont County Streets',
+    basemap: new Basemap({
+        id: 'streets',
+        layers: [new BasemapLayer({
+            url: 'http://maps.clermontauditor.org/arcgis/rest/services/WMAS/LODS/MapServer'
+        }), new BasemapLayer({
+            url: 'http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer'
+        }), new BasemapLayer({
+            url: 'http://maps.clermontauditor.org/arcgis/rest/services/WMAS/Streetmap/MapServer'
+        })]
+    })
+},
+</code></pre>
+
+<ul>
+<li>
+<p>By design the template is built to work with Esri basemaps. So the first basemap which gets loaded in the <code>viewer.js</code> file is <strong>streets</strong>. So even if you follow the above steps in <code>basemaps.js</code> the scales will not be honored until some customizations are made to <strong>viewer.js</strong>.</p>
+</li>
+<li>
+<p>Around line 23 look for the block of code below. This is what you will need to customize so your scales or levels of detail will be honored when the application loads.</p>
+</li>
+</ul>
+<pre><code class="javascript">// viewer.js
+
+mapOptions: {
+    basemap: 'streets',
+    center: [-96.59179687497497, 39.09596293629694],
+    zoom: 5,
+    sliderStyle: 'small'
+},
+</code></pre>
+
+<ul>
+<li>
+<p>You will need to create a Basemap and add a BasemapLayer which references your scales.</p>
+</li>
+<li>
+<p>You must define or add 2 references for this example <code>'esri/dijit/Basemap'</code> &amp; <code>'esri/dijit/BasemapLayer'</code></p>
+</li>
+<li>
+<p>Your define statement might look like the code below, around line 7 <code>viewer.js</code></p>
+</li>
+</ul>
+<pre><code class="javascript">define(['esri/InfoTemplate',
+        'esri/units',
+        'esri/geometry/Extent',
+        'esri/config',
+        'esri/tasks/GeometryService',
+        'esri/dijit/Basemap',
+        'esri/dijit/BasemapLayer'],
+</code></pre>
+
+<ul>
+<li>Next add references in your function, around line 14 <code>viewer.js</code></li>
+</ul>
+<pre><code class="javascript">function (a, b, c, d, e, Basemap, BasemapLayer) {
+</code></pre>
+
+<ul>
+<li>Next create your basemap as shown below, around line 18 <code>viewer.js</code></li>
+</ul>
+<pre><code class="javascript"> mapOptions: {
+                    basemap: new Basemap({
+                        layers: [new BasemapLayer({
+                            url: 'http://maps.clermontauditor.org/arcgis/rest/services/WMAS/LODS/MapServer'
+                        })]
+                    }),
+                    center: [-84.138794, 39.055701],
+                    zoom: 11,
+                    sliderStyle: 'small'
+                },
+</code></pre>
+
+<ul>
+<li>
+<p>The above code will ensure the application assumes your scales or level of detail when it loads.</p>
+</li>
+<li>
+<p>You might notice the map looks blank when the application initially loads because the service being loaded  was an empty cache. Once the application assumes the scales it will then load your custom basemaps.</p>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

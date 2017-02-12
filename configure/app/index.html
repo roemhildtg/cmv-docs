@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://cmv.io/configure/app/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>app.js - CMV</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">CMV</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../..">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../">Configure</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../support/">Support</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../develop/">Development Environment</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CHANGELOG/">Changelog</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../viewer/">viewer.js</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">app.js</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Viewer.js <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../header/">header</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../mapOptions/">MapOptions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../operationalLayers/">Operational Layers</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../panes/">Panes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../titles/">Titles</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../widgets/">Widgets</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../widgets/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Basemaps/">BaseMaps</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Bookmarks/">Bookmarks</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Directions/">Directions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Draw/">Draw</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Editor/">Editor</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Find/">Find</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Geocoder/">Geocoder</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Growler/">Growler</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Help/">Help</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/HomeButton/">Home Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Identify/">Identify</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LayerControl/">Layer Control</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Legend/">Legend</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LocateButton/">Locate Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/MapInfo/">Map Info</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Measurement/">Measurement</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/OverviewMap/">Overview Map</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Print/">Print</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Scalebar/">Scalebar</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/StreetView/">StreetView</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../contribute/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/BuildingCustomWidgets/">Building Custom Widgets</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/ContributingOnGitHub/">Submitting a Pull Request</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/Committers/">Committing Changes to CMV</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/changelog/">Change Log</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/team/">The CMV Team</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../viewer/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../header/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/cmv/cmv-app">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#app-mixin-and-config">App Mixin and Config</a></li>
+        
+            <li><a href="#mixin-methods">Mixin Methods</a></li>
+        
+            <li><a href="#default-mixin-details">Default Mixin Details</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="app-mixin-and-config">App Mixin and Config</h1>
+<p>In CMV, the application has been split into several different pieces. Each of these
+mixins can be customized to enable loading different sources of configs, different
+layout types, or even an entirely different dojo application.</p>
+<p>In addition, new pieces can be added and replaced as necessary when building custom
+configurations of cmv.</p>
+<p>The file <code>config/app.js</code> is used to bootstrap and load cmv's config, layout, map,
+and widgets. <code>app.js</code> loads the required components and creates a new application
+from the components. It uses <code>dojo/declare</code> to call each mixin's methods.</p>
+<p><strong>The first mixins on the list will be the last ones called. In the example below,
+<code>_ControllerBase</code> is called first.</strong></p>
+<pre><code class="javascript">var App = declare([
+
+    // add custom mixins here...note order may be important and
+    // overriding certain methods incorrectly may break the app
+    // First on the list are last called last, for instance the startup
+    // method on _ControllerBase is called FIRST, and _LayoutMixin is called LAST
+    // for the most part they are interchangeable, except _ConfigMixin
+    // and _ControllerBase
+    //
+    _LayoutMixin,
+    _WidgetsMixin,
+    _MapMixin,
+
+    // configMixin should be right before _ControllerBase so it is
+    // called first to initialize the config object
+    _ConfigMixin,
+
+    // controller base needs to be last
+    _ControllerBase
+]);
+</code></pre>
+
+<h2 id="mixin-methods">Mixin Methods</h2>
+<p>Each mixin may implement one or all of these methods depending on its needs. The
+cmv app loads in 3 stages:</p>
+<ol>
+<li>Load Config - Load and modify the config by fetching any files necessary and perform any config validation</li>
+<li>Post Config - The config has been loaded, perform any variable initialzing and pre-loading before the
+ app starts up</li>
+<li>Startup - Startup the map, widgets, layers, etc</li>
+</ol>
+<h3 id="loadconfigwait"><code>loadConfig(wait)</code></h3>
+<p>Loads or modify the config object before the app begins initializing. If the method
+performs any async processes, it should return pass a deferred to <code>this.inherited</code>
+and return the value of <code>this.inherited</code> or the deferred if null.</p>
+<p><strong>Parameters:</strong></p>
+<p><code>wait</code> - an optional deferred object that needs to resolve before processing can continue
+to the current mixin.</p>
+<p><strong>Returns:</strong></p>
+<p>A deferred object or <code>this.inherited()</code>.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="javascript">loadConfig: function (wait) {
+
+    // this will be used to make any inherited methods 'wait'
+    var waitDeferred = new Deferred();
+
+    if (wait) {
+
+        // if we need to wait for a previous deferred
+        // wait for it,
+        wait.then(lang.hitch(this, function () {
+
+          // do any config processing then resolve the waitDeferred
+
+        }));
+    } else {
+
+      // do any config processing then resolve the waitDeferred
+
+    }
+
+    // call any inherited methods
+    // pass our waitDeferred
+    // or if the inherited returns nothing, return our deferred
+    return this.inherited(arguments, [waitDeferred]) || waitDeferred;
+},
+</code></pre>
+
+<h3 id="postconfigwait"><code>postConfig(wait)</code></h3>
+<p>A method that is run after all async config loading is finished. This method
+can startup widgets that need to load before the app starts or initialize any
+variables on the app. It is similar to the <code>loadConfig</code> function in that if the method
+performs any async processes, it should return pass a deferred to <code>this.inherited</code>
+and return the value of <code>this.inherited</code> or the deferred if null.</p>
+<p><code>loading</code> type widgets are loaded at this time. </p>
+<p><strong>Parameters:</strong></p>
+<p><code>wait</code> - an optional deferred object that needs to resolve before processing can continue
+to the current mixin.</p>
+<p><strong>Returns:</strong></p>
+<p>The value of <code>this.inherited()</code> or a deferred object.</p>
+<h3 id="startup"><code>startup</code></h3>
+<p>The startup method for the mixin. This is the final stage of loading the app.</p>
+<h2 id="default-mixin-details">Default Mixin Details</h2>
+<p>The following mixins are provided with cmv by default.</p>
+<h3 id="_controllerbase"><code>_ControllerBase</code></h3>
+<p>The base loading mixin. <strong>This should come last in the list of mixins.</strong></p>
+<h3 id="_configmixin"><code>_ConfigMixin</code></h3>
+<p>The config loading logic.</p>
+<h3 id="_layoutmixin"><code>_LayoutMixin</code></h3>
+<p>The mixin that sets up the layout and dom.</p>
+<h3 id="_mapmixin"><code>_MapMixin</code></h3>
+<p>The mixin that sets up and loads the map and layers.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

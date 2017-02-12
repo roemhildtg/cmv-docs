@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="http://cmv.io/configure/mapOptions/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+
+	<title>MapOptions - CMV</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">CMV</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Getting Started <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../..">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../installation/">Installation</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../">Configure</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../support/">Support</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../develop/">Development Environment</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../CHANGELOG/">Changelog</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../viewer/">viewer.js</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../app/">app.js</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Viewer.js <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../header/">header</a>
+</li>
+
+                    
+                        
+<li class="active">
+    <a href="./">MapOptions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../operationalLayers/">Operational Layers</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../panes/">Panes</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../titles/">Titles</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../widgets/">Widgets</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Widgets <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../widgets/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Basemaps/">BaseMaps</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Bookmarks/">Bookmarks</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Directions/">Directions</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Draw/">Draw</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Editor/">Editor</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Find/">Find</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Geocoder/">Geocoder</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Growler/">Growler</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Help/">Help</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/HomeButton/">Home Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Identify/">Identify</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LayerControl/">Layer Control</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Legend/">Legend</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/LocateButton/">Locate Button</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/MapInfo/">Map Info</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Measurement/">Measurement</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/OverviewMap/">Overview Map</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Print/">Print</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/Scalebar/">Scalebar</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../widgets/StreetView/">StreetView</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contribute <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../contribute/">Introduction</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/BuildingCustomWidgets/">Building Custom Widgets</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/ContributingOnGitHub/">Submitting a Pull Request</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../contribute/Committers/">Committing Changes to CMV</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../../about/license/">License</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/changelog/">Change Log</a>
+</li>
+
+                    
+                        
+<li >
+    <a href="../../about/team/">The CMV Team</a>
+</li>
+
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                <li >
+                    <a rel="next" href="../header/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../operationalLayers/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/cmv/cmv-app">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#mapoptions-section-of-viewerjs">MapOptions Section of viewer.js</a></li>
+        
+            <li><a href="#example-mapoptions-using-a-basemap-from-arcgis-online">Example: mapOptions using a basemap from ArcGIS Online:</a></li>
+        
+            <li><a href="#example-mapoptions-using-a-custom-basemap">Example: mapOptions using a custom basemap:</a></li>
+        
+            <li><a href="#manually-setting-the-levels-of-detail-lods">Manually setting the levels of detail (LODs)</a></li>
+        
+            <li><a href="#important-chrome-browser-tweak">Important Chrome Browser Tweak</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="mapoptions-section-of-viewerjs">MapOptions Section of viewer.js</h1>
+<ul>
+<li>
+<p>set initial basemap, initial map center, zoom level, and sliderStyle. See <a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html#map1">Map Constructor</a> parameters for all of the options available.</p>
+</li>
+<li>
+<p><strong>Copyright Note For Your Map Services:</strong> CMV uses the compact build of the ArcGIS JavaScript API. This effects the <code>showAttribution:</code> option where the compact build sets it to <code>false</code> by default. The result is that your copyright information will not be displayed on the map. In <code>mapOptions:{}</code> add <code>showAttribution: true</code> to override the default setting when using the compact build of the API. See the three examples below on how to use <code>showAttribution:</code> if you need to display a copyright with your map services.</p>
+</li>
+<li>
+<p>If you want to have the large zoom slider in your map like this <code>sliderStyle: 'large'</code>, you will need to use the full build of the JavaScript API,  CMV uses the compact build by default.</p>
+</li>
+</ul>
+<h2 id="example-mapoptions-using-a-basemap-from-arcgis-online">Example: mapOptions using a basemap from ArcGIS Online:</h2>
+<pre><code class="javascript">mapOptions: {
+   basemap: 'streets',
+   center: [-98, 40],
+   zoom: 5,
+   sliderStyle: 'small',
+   showAttribution: true
+}
+</code></pre>
+
+<h2 id="example-mapoptions-using-a-custom-basemap">Example: mapOptions using a custom basemap:</h2>
+<p>In the <code>define()</code> add references to <code>'esri/dijit/Basemap'</code>, <code>'esri/dijit/BasemapLayer'</code> and <code>'esri/geometry/Point'</code></p>
+<pre><code class="javascript">mapOptions: {
+   basemap: new Basemap({
+        id: 'basemap1',
+        layers: [new BasemapLayer({
+        url: 'http://ServerName/arcgis/rest/services/BaseMapName/MapServer'
+        })]
+    }),
+    center: new Point({
+        x: 6356023.515330248,
+        y: 1917313.443425702,
+        spatialReference: {
+            wkid: 102642
+        }
+    }),
+    zoom: 5,
+    sliderStyle: 'small',
+    showAttribution: true
+}
+</code></pre>
+
+<h2 id="manually-setting-the-levels-of-detail-lods">Manually setting the levels of detail (LODs)</h2>
+<p>If you want to zoom in beyond the default levels of detail provided by your map services, you can manually set them by adding the "lods" property to your mapOptions object.</p>
+<pre><code class="javascript">mapOptions: {
+    basemap: 'streets',
+    center: [-96.59179687497497, 39.09596293629694],
+    zoom: 5,
+    sliderStyle: 'small',
+    lods: [
+        {
+            'level'     : 0,
+            'resolution': 156543.03392800014,
+            'scale'     : 591657527.591555
+        },
+        {
+            'level'     : 1,
+            'resolution': 78271.51696399994,
+            'scale'     : 295828763.795777
+        },
+        {
+            'level'     : 2,
+            'resolution': 39135.75848200009,
+            'scale'     : 147914381.897889
+        },
+        {
+            'level'     : 3,
+            'resolution': 19567.87924099992,
+            'scale'     : 73957190.948944
+        },
+        {
+            'level'     : 4,
+            'resolution': 9783.93962049996,
+            'scale'     : 36978595.474472
+        },
+        {
+            'level'     : 5,
+            'resolution': 4891.96981024998,
+            'scale'     : 18489297.737236
+        },
+        {
+            'level'     : 6,
+            'resolution': 2445.98490512499,
+            'scale'     : 9244648.868618
+        },
+        {
+            'level'     : 7,
+            'resolution': 1222.992452562495,
+            'scale'     : 4622324.434309
+        },
+        {
+            'level'     : 8,
+            'resolution': 611.4962262813797,
+            'scale'     : 2311162.217155
+        },
+        {
+            'level'     : 9,
+            'resolution': 305.74811314055756,
+            'scale'     : 1155581.108577
+        },
+        {
+            'level'     : 10,
+            'resolution': 152.87405657041106,
+            'scale'     : 577790.554289
+        },
+        {
+            'level'     : 11,
+            'resolution': 76.43702828507324,
+            'scale'     : 288895.277144
+        },
+        {
+            'level'     : 12,
+            'resolution': 38.21851414253662,
+            'scale'     : 144447.638572
+        },
+        {
+            'level'     : 13,
+            'resolution': 19.10925707126831,
+            'scale'     : 72223.819286
+        },
+        {
+            'level'     : 14,
+            'resolution': 9.554628535634155,
+            'scale'     : 36111.909643
+        },
+        {
+            'level'     : 15,
+            'resolution': 4.77731426794937,
+            'scale'     : 18055.954822
+        },
+        {
+            'level'     : 16,
+            'resolution': 2.388657133974685,
+            'scale'     : 9027.977411
+        },
+        {
+            'level'     : 17,
+            'resolution': 1.1943285668550503,
+            'scale'     : 4513.988705
+        },
+        {
+            'level'     : 18,
+            'resolution': 0.5971642835598172,
+            'scale'     : 2256.994353
+        },
+        {
+            'level'     : 19,
+            'resolution': 0.29858214164761665,
+            'scale'     : 1128.497176
+        },
+        {
+            'level'     : 20,
+            'resolution': 0.14929107082380833,
+            'scale'     : 564.248588
+        },
+        {
+            'level'     : 21,
+            'resolution': 0.07464553541190416,
+            'scale'     : 282.124294
+        }
+    ]
+},
+</code></pre>
+
+<h2 id="important-chrome-browser-tweak">Important Chrome Browser Tweak</h2>
+<p>If you notice or experience the map or the application flashing while zooming in &amp; out, or panning here is a workaround.</p>
+<p>In <code>config/viewer.js</code> under Map Options add <code>navigationMode: 'classic'</code></p>
+<p>Example</p>
+<pre><code class="javascript">mapOptions: {
+   navigationMode: 'classic',
+   center: [-84.138794, 39.055701],
+   zoom: 11,
+   sliderStyle: 'small',
+   showAttribution: true
+}
+</code></pre>
+
+<p>Here is a <a href="https://developers.arcgis.com/javascript/jsapi/map-amd.html#navigationmode">link</a> to the ArcGIS Javascript API docs for a more detailed explanation.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
