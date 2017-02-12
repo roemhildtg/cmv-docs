@@ -516,10 +516,12 @@
 <code>formatter</code> may provide the functionality. In addition, the <code>content</code> property
 may be used for other advanced cases. <a href="#build-your-own-identify-popup">See below.</a></p>
 <h2 id="build-your-own-identify-popup">Build your own identify popup</h2>
-<p>The JavascriptAPI has <a href="https://developers.arcgis.com/javascript/jshelp/intro_formatinfowindow.html">a nice tutorial</a> on formatting the info window content. Specifying a content formatter will allow you to do things like:
-<em> Programatically generate html for the popup (bullet list)
-</em> Alter field values (convert a image url to image)
-* Embed other widgets like a tab container and chart/table in the popup window</p>
+<p>The JavascriptAPI has <a href="https://developers.arcgis.com/javascript/jshelp/intro_formatinfowindow.html">a nice tutorial</a> on formatting the info window content. Specifying a content formatter will allow you to do things like:</p>
+<ul>
+<li>Programatically generate html for the popup (bullet list)</li>
+<li>Alter field values (convert a image url to image)</li>
+<li>Embed other widgets like a tab container and chart/table in the popup window</li>
+</ul>
 <p>The identify widget will check for a <code>content</code> property in each <code>identifies</code> object. This property can be either a <strong>string or function</strong>.
 Example usage:</p>
 <pre><code class="javascript">electric: {
